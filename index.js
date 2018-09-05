@@ -1,5 +1,7 @@
 const botSettings = require("./config.json");
 const Discord = require("discord.js");
+const RichEmbed = require("discord.js");
+const { Client, Util } = require('discord.js');
 const client = new Discord.Client();
 const axios = require("axios");
 const yt = require("ytdl-core");
