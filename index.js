@@ -17,6 +17,17 @@ const youtube = new YouTube(ytApiKey);
 const bot = new Discord.Client({
 	disableEveryone: true
 });
+client.on('ready',  () => {
+    console.log('تم تشغيل :dragon  ');
+    console.log(`Logged in as * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
+    console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
+    console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " ${client.channels.size} " ]`);
+  });
+client.on('ready', async () => {
+    console.log('I am ready!');
+
+    client.user.setPresence({ game: { name: 'Free Time Music.', type: 2 } });
+});
 
 /* MUSIC VARIABLES */
 let queue = []; // Songs queue
