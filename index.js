@@ -26,7 +26,7 @@ client.on('ready',  () => {
 client.on('ready', async () => {
     console.log('I am ready!');
 
-    client.user.setPresence({ game: { name: 'Free Time Music.', type: 2 } });
+   
 });
 
 /* MUSIC VARIABLES */
