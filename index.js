@@ -1,4 +1,4 @@
-const botSettings = require("./config.json");
+const botSettings = require("./config.json");//
 const Discord = require("discord.js");
 const RichEmbed = require("discord.js");
 const { Client, Util } = require('discord.js');
